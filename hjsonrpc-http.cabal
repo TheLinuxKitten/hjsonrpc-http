@@ -1,0 +1,33 @@
+name:                hjsonrpc-http
+version:             0.1.0.0
+synopsis:            Libreria JSON-RPC HTPP para implementar clientes
+homepage:            none
+license:             BSD3
+license-file:        LICENSE
+author:              The Linux Kitten
+maintainer:          thelinuxkitten@thelinuxkitten.org
+category:            Network
+build-type:          Simple
+cabal-version:       >=1.10
+
+library
+  exposed-modules:     Network.JsonRpcCliHttp
+  build-depends:       base >=4 && <5
+                     , aeson
+                     , bytestring
+                     , connection
+                     , hjsonrpc
+                     , http-client
+                     , http-client-tls
+                     , http-conduit
+                     , http-types
+                     , json-rpc
+                     , monad-logger
+                     , monad-control
+                     , network
+                     , text
+                     , transformers
+                     , uuid
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+
